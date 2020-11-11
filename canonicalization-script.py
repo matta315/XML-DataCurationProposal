@@ -13,7 +13,7 @@ def normalize_line_ends(txt: str) -> str:
     return ' '.join(pts)
 
 
-def trim_and_sort_attrs(tt: ET) -> None:
+def trim_and_sort_attrs(tt: etree) -> None:
     for k in tt.attrib:
         tt.attrib[k] = tt.attrib[k].strip()
     dd = {}
@@ -24,7 +24,7 @@ def trim_and_sort_attrs(tt: ET) -> None:
         tt.attrib[k] = dd[k]
 
 
-def uniform_yes_no(tt: ET) -> None:
+def uniform_yes_no(tt: etree) -> None:
     for k in tt.attrib:
         v = tt.attrib[k]
         if v.lower() == 'y' or v.lower() == 'yes':
@@ -33,7 +33,7 @@ def uniform_yes_no(tt: ET) -> None:
             tt.attrib[k] = 'N'
 
 
-def sort_child_elements(tt: ET, key_func) -> None:
+def sort_child_elements(tt: etree, key_func) -> None:
     if not tt[:]:
         return
     #print("debug = ", tt)
@@ -152,7 +152,7 @@ print("binary equal  : ", is_same)
 
 assert is_same
 # write final XML file
-f = open("canonical.xml", "w")
+f = open("final-file.xml", "w")
 f.write(strA.decode('utf8'))
 f.close()
 
