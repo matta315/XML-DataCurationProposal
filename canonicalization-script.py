@@ -1,10 +1,6 @@
-from xml.dom import minidom
-from xml.dom.minidom import Node
+import hashlib
 
 from lxml import etree
-import xml.etree.ElementTree as ET
-from io import StringIO, BytesIO
-import hashlib
 
 
 def normalize_line_ends(txt: str) -> str:
@@ -152,8 +148,8 @@ strB = canonicalize_utf8_encoded(fB_path)
 #print_lines(strA, 20)
 #print_lines(strB, 20)
 
-print_lines(strA, 10000)
-print_lines(strB, 10000)
+#print_lines(strA, 10000)
+#print_lines(strB, 10000)
 print('-------------------------------------------')
 
 assert get_checksum(strA) == get_checksum(strB)
