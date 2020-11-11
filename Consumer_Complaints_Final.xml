@@ -1,43 +1,61 @@
 <?xml version='1.0' encoding='utf8'?>
 <consumerComplaints>
-  <complaint id="14038" submissionType="Referral">
+  <complaint id="759222" submissionType="Referral">
     <company>
-      <companyName>U.S. BANCORP</companyName>
-      <companyState>AZ</companyState>
-      <companyZip>85008</companyZip>
+      <companyName>M&amp;T Bank Corporation</companyName>
+      <companyState>MI</companyState>
+      <companyZip>48382</companyZip>
     </company>
-    <event date="2017-01-22" type="sentToCompany"/>
-    <event date="2017-01-17" type="received"/>
+    <event date="2017-03-12" type="received"/>
+    <event date="2017-03-17" type="sentToCompany"/>
     <issue>
-      <issueType>Loan servicing, payments, escrow account</issueType>
+      <issueType>Loan modification,collection,foreclosure</issueType>
     </issue>
     <product>
       <productType>Mortgage</productType>
       <subproduct>Other mortgage</subproduct>
     </product>
     <response consumerDisputed="Y" timely="Y">
-      <responseType>Closed without relief</responseType>
+      <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
-  <complaint id="2112558" submissionType="Web">
+  <complaint id="596562" submissionType="Phone">
     <company>
-      <companyName>Round Two Recovery</companyName>
-      <companyState>OK</companyState>
-      <companyZip>73135</companyZip>
+      <companyName>U.S. BANCORP</companyName>
+      <companyState>MN</companyState>
+      <companyZip>48322</companyZip>
     </company>
-    <consumerNarrative>I am a veteran widow whom is a recipient of Maryland State Medicaid and have been for several years. Therefore, the State is responsible for my health bills at XXXX cost to me.</consumerNarrative>
-    <event date="2017-09-15" type="received"/>
-    <event date="2017-09-15" type="sentToCompany"/>
+    <event date="2016-11-13" type="received"/>
+    <event date="2016-11-20" type="sentToCompany"/>
     <issue>
-      <issueType>Continued attempts to collect debt not owed</issueType>
-      <subissue>Debt is not mine</subissue>
+      <issueType>Loan servicing, payments, escrow account</issueType>
     </issue>
     <product>
-      <productType>Debt collection</productType>
-      <subproduct>Medical</subproduct>
+      <productType>Mortgage</productType>
+      <subproduct>Conventional adjustable mortgage</subproduct>
     </product>
-    <response consumerDisputed="N" timely="N">
-      <responseType>Untimely response</responseType>
+    <response consumerDisputed="N" timely="Y">
+      <responseType>Closed with monetary relief</responseType>
+    </response>
+  </complaint>
+  <complaint id="2364257" submissionType="Web">
+    <company>
+      <companyName>BARCLAYS BANK DELAWARE</companyName>
+      <companyState>MA</companyState>
+      <companyZip>19904</companyZip>
+    </company>
+    <consumerNarrative>Was a happy XXXX card member for years, in late XX/XX/2016 XXXX converted the card portfolio to Barclaycard ( XXXX ). We almost never carry a balance over, but we started to in XX/XX/XXXX and Barclay has been overcharging the interest expense every month. Instead of charging interest on the carried balance they charged it on the entire average balance. So if we charged {$3000.00} last month and carried {$3000.00} from previous months then they charged us 15 % of the {$6000.00} = {$75.00}, should have been {$37.00} in interest charges. They are double dipping, getting the interchange fee ( 1.5 % of purchase, equal to an 18 % apr ), plus they are getting the interest on the purchases at 15 %, that is the equivalent of an 33 % interest charge. I feel this practice is very unethical, if not illegal. We converted, not by our choice, from XXXX to Barclaycard MasterCard, so if we leave we lose all the points we acquired in previous years. Completely unfair and is why the big financials have the hated reputation they have now. Hope you folks over there can investigate.</consumerNarrative>
+    <event date="2019-02-28" type="received"/>
+    <event date="2019-02-28" type="sentToCompany"/>
+    <issue>
+      <issueType>Other fee</issueType>
+    </issue>
+    <product>
+      <productType>Credit card</productType>
+    </product>
+    <response consumerDisputed="Y" timely="Y">
+      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
+      <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
   <complaint id="2327502" submissionType="Web">
@@ -82,62 +100,25 @@
       <responseType>Closed with explanation</responseType>
     </response>
   </complaint>
-  <complaint id="2364257" submissionType="Web">
+  <complaint id="2112558" submissionType="Web">
     <company>
-      <companyName>BARCLAYS BANK DELAWARE</companyName>
-      <companyState>MA</companyState>
-      <companyZip>19904</companyZip>
+      <companyName>Round Two Recovery</companyName>
+      <companyState>OK</companyState>
+      <companyZip>73135</companyZip>
     </company>
-    <consumerNarrative>Was a happy XXXX card member for years, in late XX/XX/2016 XXXX converted the card portfolio to Barclaycard ( XXXX ). We almost never carry a balance over, but we started to in XX/XX/XXXX and Barclay has been overcharging the interest expense every month. Instead of charging interest on the carried balance they charged it on the entire average balance. So if we charged {$3000.00} last month and carried {$3000.00} from previous months then they charged us 15 % of the {$6000.00} = {$75.00}, should have been {$37.00} in interest charges. They are double dipping, getting the interchange fee ( 1.5 % of purchase, equal to an 18 % apr ), plus they are getting the interest on the purchases at 15 %, that is the equivalent of an 33 % interest charge. I feel this practice is very unethical, if not illegal. We converted, not by our choice, from XXXX to Barclaycard MasterCard, so if we leave we lose all the points we acquired in previous years. Completely unfair and is why the big financials have the hated reputation they have now. Hope you folks over there can investigate.</consumerNarrative>
-    <event date="2019-02-28" type="received"/>
-    <event date="2019-02-28" type="sentToCompany"/>
+    <consumerNarrative>I am a veteran widow whom is a recipient of Maryland State Medicaid and have been for several years. Therefore, the State is responsible for my health bills at XXXX cost to me.</consumerNarrative>
+    <event date="2017-09-15" type="received"/>
+    <event date="2017-09-15" type="sentToCompany"/>
     <issue>
-      <issueType>Other fee</issueType>
+      <issueType>Continued attempts to collect debt not owed</issueType>
+      <subissue>Debt is not mine</subissue>
     </issue>
     <product>
-      <productType>Credit card</productType>
+      <productType>Debt collection</productType>
+      <subproduct>Medical</subproduct>
     </product>
-    <response consumerDisputed="Y" timely="Y">
-      <publicResponse>Company has responded to the consumer and the CFPB and chooses not to provide a public response</publicResponse>
-      <responseType>Closed with explanation</responseType>
-    </response>
-  </complaint>
-  <complaint id="596562" submissionType="Phone">
-    <company>
-      <companyName>U.S. BANCORP</companyName>
-      <companyState>MN</companyState>
-      <companyZip>48322</companyZip>
-    </company>
-    <event date="2016-11-13" type="received"/>
-    <event date="2016-11-20" type="sentToCompany"/>
-    <issue>
-      <issueType>Loan servicing, payments, escrow account</issueType>
-    </issue>
-    <product>
-      <productType>Mortgage</productType>
-      <subproduct>Conventional adjustable mortgage</subproduct>
-    </product>
-    <response consumerDisputed="N" timely="Y">
-      <responseType>Closed with monetary relief</responseType>
-    </response>
-  </complaint>
-  <complaint id="759222" submissionType="Referral">
-    <company>
-      <companyName>M&amp;T Bank Corporation</companyName>
-      <companyState>MI</companyState>
-      <companyZip>48382</companyZip>
-    </company>
-    <event date="2017-03-12" type="received"/>
-    <event date="2017-03-17" type="sentToCompany"/>
-    <issue>
-      <issueType>Loan modification,collection,foreclosure</issueType>
-    </issue>
-    <product>
-      <productType>Mortgage</productType>
-      <subproduct>Other mortgage</subproduct>
-    </product>
-    <response consumerDisputed="Y" timely="Y">
-      <responseType>Closed with explanation</responseType>
+    <response consumerDisputed="N" timely="N">
+      <responseType>Untimely response</responseType>
     </response>
   </complaint>
   <complaint id="837784" submissionType="Web">
@@ -158,6 +139,25 @@
     </product>
     <response consumerDisputed="N" timely="Y">
       <responseType>Closed with monetary relief</responseType>
+    </response>
+  </complaint>
+  <complaint id="14038" submissionType="Referral">
+    <company>
+      <companyName>U.S. BANCORP</companyName>
+      <companyState>AZ</companyState>
+      <companyZip>85008</companyZip>
+    </company>
+    <event date="2017-01-22" type="sentToCompany"/>
+    <event date="2017-01-17" type="received"/>
+    <issue>
+      <issueType>Loan servicing, payments, escrow account</issueType>
+    </issue>
+    <product>
+      <productType>Mortgage</productType>
+      <subproduct>Other mortgage</subproduct>
+    </product>
+    <response consumerDisputed="Y" timely="Y">
+      <responseType>Closed without relief</responseType>
     </response>
   </complaint>
 </consumerComplaints>

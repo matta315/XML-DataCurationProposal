@@ -45,14 +45,19 @@ def sort_child_elements(tt: etree, key_func) -> None:
     pass
 
 
-def canonicalize_utf8_encoded(ff_path: str) -> bytearray:
+def canonicalize_utf8_encoded(file_path: str) -> bytearray:
     # Use an XML parser to read the intrinsic content of file
     # - Unify encoding to UTF-8
     # - Expand all attributes if there's any internal DTD
     # - Remove comment elements
     # - set load_dtd=False to remove internal schema/declarations
-    parser = etree.XMLParser(encoding='utf8', attribute_defaults=True, remove_comments=True, load_dtd=False)
-    complaintsRoot = etree.parse(ff_path, parser=parser).getroot()
+    parser = etree.XMLParser(
+        encoding='utf8',
+        attribute_defaults=True,
+        remove_comments=True,
+        load_dtd=False)
+    complaintsRoot = etree.parse(
+        file_path, parser=parser).getroot()
     #str = ET.tostring(complaintsRoot, encoding='utf8').decode('utf8')
 
     # trim all texts - remove insignificant white spaces
@@ -70,7 +75,9 @@ def canonicalize_utf8_encoded(ff_path: str) -> bytearray:
     for anyTag in complaintsRoot.iter('*'):
         trim_and_sort_attrs(anyTag)
     # sort elements at all levels (starting from level=complaint) by tag name alphabetically
-    sort_child_elements(complaintsRoot[:], lambda x: x.tag)
+    sort_child_elements(
+        complaintsRoot[:],
+        lambda x: x.tag)
 
     # re-format data in old system -> new format
     # for every complaint, replace attribute 'submitted' by element 'submissionType'
@@ -93,14 +100,17 @@ def canonicalize_utf8_encoded(ff_path: str) -> bytearray:
         uniform_yes_no(resp)
 
     # sort complaints by complaint ID
-    complaintsRoot[:] = sorted(complaintsRoot, key=lambda x: x.attrib['id'])
+    #complaintsRoot[:] = sorted(complaintsRoot, key=lambda x: x.attrib['id'])
 
     # normalize indentation
     etree.indent(complaintsRoot)
 
     # step: single encoding: UTF8
-    str = etree.tostring(complaintsRoot, encoding='utf8', pretty_print=True, xml_declaration=True)
-
+    str = etree.tostring(
+        complaintsRoot,
+        encoding='utf8',
+        pretty_print=True,
+        xml_declaration=True)
     # return final xml outcome
     return str
 
@@ -142,17 +152,18 @@ strB = canonicalize_utf8_encoded(fB_path)
 #print_lines(strA, 20)
 #print_lines(strB, 20)
 
-#print_lines(strA, 10000)
-#print_lines(strB, 10000)
+print_lines(strA, 10000)
+print_lines(strB, 10000)
 print('-------------------------------------------')
 
+assert get_checksum(strA) == get_checksum(strB)
 print("checksum equal: ", get_checksum(strA) == get_checksum(strB))
 is_same = binary_compare(strA, strB)
 print("binary equal  : ", is_same)
 
 assert is_same
 # write final XML file
-f = open("final-file.xml", "w")
+f = open("Consumer_Complaints_Final.xml", "w")
 f.write(strA.decode('utf8'))
 f.close()
 
