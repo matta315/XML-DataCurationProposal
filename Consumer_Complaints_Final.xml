@@ -1,4 +1,32 @@
 <?xml version='1.0' encoding='utf8'?>
+<!DOCTYPE consumerComplaints [
+        <!ELEMENT consumerComplaints (complaint)*>
+        <!ELEMENT complaint (company|event|issue|product|response|consumerNarrative)*>
+        <!ATTLIST complaint
+                id CDATA #REQUIRED
+                submissionType CDATA #REQUIRED>
+        <!ELEMENT company (companyName|companyState|companyZip)*>
+        <!ELEMENT companyName (#PCDATA)>
+        <!ELEMENT companyState (#PCDATA)>
+        <!ELEMENT companyZip (#PCDATA)>
+        <!ELEMENT event (#PCDATA)>
+        <!ATTLIST event
+                date CDATA #REQUIRED
+                type CDATA #REQUIRED>
+        <!ELEMENT issue (issueType|subissue)*>
+        <!ELEMENT issueType (#PCDATA)>
+        <!ELEMENT product (productType|subproduct)*>
+        <!ELEMENT productType (#PCDATA)>
+        <!ELEMENT subproduct (#PCDATA)>
+        <!ELEMENT response (responseType|publicResponse)*>
+        <!ATTLIST response
+                consumerDisputed CDATA #REQUIRED
+                timely CDATA #REQUIRED>
+        <!ELEMENT responseType (#PCDATA)>
+        <!ELEMENT consumerNarrative (#PCDATA)>
+        <!ELEMENT publicResponse (#PCDATA)>
+        <!ELEMENT subissue (#PCDATA)>
+        ]>
 <consumerComplaints>
   <complaint id="759222" submissionType="Referral">
     <company>
